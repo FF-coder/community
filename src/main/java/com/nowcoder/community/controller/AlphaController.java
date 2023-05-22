@@ -53,7 +53,7 @@ public class AlphaController {
         try (
                 PrintWriter writer = response.getWriter();
         ) {
-            writer.write("<h1>牛客网</h1>");
+            writer.write("<h1>校园资讯网</h1>");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -102,7 +102,7 @@ public class AlphaController {
 
     @RequestMapping(path = "/school", method = RequestMethod.GET)
     public String getSchool(Model model) {
-        model.addAttribute("name", "北京大学");
+        model.addAttribute("name", "西安大学");
         model.addAttribute("age", 80);
         return "/demo/view";
     }
